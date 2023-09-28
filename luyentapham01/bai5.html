@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let start1 = ["Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus"]
+        let start2 = ["Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo"]
+        function check_start(start) {
+            let index_start1 = 0;
+            let result = "";
+            for (let i = 0; i < start1.length; i++) {
+                if (start == start[i]) {
+                   index_start1 = i;
+                   for (let i = 0; i < start2_.length; j++) {
+                    if (index_start1 == j) {
+                        result = start2[j];
+                        return result;
+                    }
+                   }
+                } else {
+                    result = "khong tim thay sao";
+                    return result;
+                }
+            }
+        }
+        let start = prompt("nhap vao ngoi sao: ")
+        document.write(check_start(start));
+    </script>
+</body>
+</html>
